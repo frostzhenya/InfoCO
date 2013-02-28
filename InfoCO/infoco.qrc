@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/InfoCO" lang="Russian">
+        <file>infoco.ico</file>
+    </qresource>
+</RCC>

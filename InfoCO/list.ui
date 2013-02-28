@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>List</class>
+ <widget class="QDialog" name="List">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>440</width>
+    <height>515</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>440</width>
+    <height>515</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Списки</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="infoco.qrc">
+    <normaloff>:/InfoCO/infoco.ico</normaloff>:/InfoCO/infoco.ico</iconset>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>421</width>
+     <height>499</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>421</width>
+     <height>499</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>421</width>
+     <height>499</height>
+    </size>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="title">
+    <string>Списки ПК/Кидалов/Кланов/ПК Кланов</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QComboBox" name="OptList">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Тип списка</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Список ПК Сталкеров</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Список Кидалов</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Список Кланов</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Список ПК Кланов</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Поиск ПК Сталкера по имени</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Поиск ПК Клана по названию</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="LaineNameSeach">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Поиски еще не реализованы</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TxtNumeSeach">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Имя для поиска</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtomAcceptList">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Вывести список</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="EditDebug">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>181</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>181</width>
+      <height>171</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>181</width>
+      <height>281</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="ListView">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>191</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>191</width>
+      <height>301</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>191</width>
+      <height>411</height>
+     </size>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>460</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="ButtomEditList">
+       <property name="text">
+        <string>Редактировать список</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ButtomClose">
+       <property name="text">
+        <string>Закрыть</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>350</y>
+      <width>421</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>421</width>
+      <height>101</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>Редактирование списка</string>
+    </property>
+    <widget class="QPushButton" name="ButtomEditListClose">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>70</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Скрыть панель</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>311</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="ButtomAddName">
+        <property name="text">
+         <string>Добавить имя в список</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="EditName"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="TxtEditList">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>311</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Имя будет добавляться в</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>OptList</tabstop>
+  <tabstop>LaineNameSeach</tabstop>
+  <tabstop>ButtomAcceptList</tabstop>
+  <tabstop>EditDebug</tabstop>
+  <tabstop>ListView</tabstop>
+  <tabstop>ButtomClose</tabstop>
+ </tabstops>
+ <resources>
+  <include location="infoco.qrc"/>
+ </resources>
+ <connections/>
+</ui>
