@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maps.ui'
 **
-** Created: Thu 28. Feb 21:38:14 2013
+** Created: Thu 7. Mar 19:48:07 2013
 **      by: Qt User Interface Compiler version 4.8.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -43,7 +43,7 @@ public:
         Maps->setMinimumSize(QSize(139, 291));
         Maps->setMaximumSize(QSize(800, 700));
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/InfoCO/infoco.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8("img/InfoCO.png"), QSize(), QIcon::Normal, QIcon::Off);
         Maps->setWindowIcon(icon);
         groupBox = new QGroupBox(Maps);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
@@ -73,6 +73,8 @@ public:
         ShowGraf->setGeometry(QRect(0, 50, 798, 651));
         ShowGraf->setMaximumSize(QSize(798, 651));
         ShowGraf->viewport()->setProperty("cursor", QVariant(QCursor(Qt::OpenHandCursor)));
+        ShowGraf->setInteractive(true);
+        ShowGraf->setResizeAnchor(QGraphicsView::AnchorViewCenter);
         ShowGraf->raise();
         groupBox->raise();
 
@@ -94,8 +96,8 @@ public:
          << QApplication::translate("Maps", "\320\242\321\203\320\275\320\263\321\203\321\201\320\272\320\260", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("Maps", "\320\242\321\203\320\275\320\263\321\203\321\201\321\201\320\272\320\260. \320\242\321\200\320\260\320\262\321\213 (\320\236\321\202 \320\270\321\201\321\201\320\273\320\265\320\264\320\276\320\262\320\260\321\202\320\265\320\273\320\265\320\271 \320\232\320\232) \320\270 \320\262 \321\207\320\260\321\201\321\202\320\275\320\276\321\201\321\202\320\270 \320\276\321\202 KirillZVER", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("Maps", "\320\242\321\203\320\275\320\263\321\203\321\201\321\201\320\272\320\260 \320\276\321\202 Rederrr2", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("Maps", "\320\232\320\260\321\200\320\260\320\262\320\260\320\275", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("Maps", "\320\233\321\216\320\261\320\265\321\207 \320\232\320\260\321\200\320\260\320\262\320\260\320\275", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("Maps", "\320\233\321\216\320\261\320\265\321\207 \320\273\320\265\321\201 (\321\201\321\205\321\200\320\276\320\275\321\213)", 0, QApplication::UnicodeUTF8)
         );
         ButtomView->setText(QApplication::translate("Maps", "\320\237\320\276\320\272\320\260\320\267\320\260\321\202\321\214", 0, QApplication::UnicodeUTF8));
         ButtomZoomIn->setText(QApplication::translate("Maps", "+", 0, QApplication::UnicodeUTF8));

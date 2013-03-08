@@ -20,8 +20,8 @@
    <string>InfoCO by Lovepsone</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="infoco.qrc">
-    <normaloff>:/InfoCO/infoco.ico</normaloff>:/InfoCO/infoco.ico</iconset>
+   <iconset>
+    <normaloff>img/InfoCO.png</normaloff>img/InfoCO.png</iconset>
   </property>
   <widget class="QGroupBox" name="MainGroupBox">
    <property name="geometry">
@@ -48,12 +48,17 @@
       </item>
       <item>
        <property name="text">
-        <string>Списки ПК/Кидалов/Кланов</string>
+        <string>Списки Сталкеров/Кланов</string>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Карты СО</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Информация по квестам</string>
        </property>
       </item>
       <item>

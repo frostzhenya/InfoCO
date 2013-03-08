@@ -23,6 +23,7 @@ private slots:
 	void OpenOptionList();
 	void CloseOptionList();
 	void addNameToList();
+	void OptChanged();
 
 private:
 	bool LoadXML;

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'infoco.h'
 **
-** Created: Wed 27. Feb 18:18:58 2013
+** Created: Tue 5. Mar 15:40:10 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!

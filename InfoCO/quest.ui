@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>quest</class>
+ <widget class="QDialog" name="quest">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>642</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>642</width>
+    <height>547</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Информация по квестам</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="OptBox">
+     <property name="minimumSize">
+      <size>
+       <width>624</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>624</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Опция</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="TxtChoiceLoc">
+        <property name="text">
+         <string>Выберите локацию</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="LocBox">
+        <item>
+         <property name="text">
+          <string>Станция</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Любеч</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Любеч (лес)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Везувий</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Новая земля</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Тунгузка</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ButtomChoice">
+        <property name="text">
+         <string>Выбрать</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="OptDopBox">
+     <property name="minimumSize">
+      <size>
+       <width>624</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>624</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Доп. опции</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Выберите NPC</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="NameBox">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ButtomChoiceName">
+        <property name="text">
+         <string>Выбрать</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="MainBox">
+     <property name="minimumSize">
+      <size>
+       <width>624</width>
+       <height>367</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>624</width>
+       <height>3670</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Информация по квестам</string>
+     </property>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>601</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>601</width>
+        <height>381</height>
+       </size>
+      </property>
+     </widget>
+     <zorder>OptBox</zorder>
+     <zorder>OptDopBox</zorder>
+     <zorder>OptDopBox</zorder>
+     <zorder>OptDopBox</zorder>
+     <zorder>textEdit</zorder>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -13,7 +13,7 @@ class InfoCO : public QDialog
 	Q_OBJECT
 
 public:
-	InfoCO(QWidget *parent = 0, Qt::WFlags flags = 0);
+	InfoCO(QWidget *parent = 0);
 	~InfoCO();
 
 private slots:

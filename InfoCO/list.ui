@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>440</width>
-    <height>515</height>
+    <height>615</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -22,21 +22,21 @@
   <property name="minimumSize">
    <size>
     <width>440</width>
-    <height>515</height>
+    <height>615</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>440</width>
-    <height>515</height>
+    <height>615</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>Списки</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="infoco.qrc">
-    <normaloff>:/InfoCO/infoco.ico</normaloff>:/InfoCO/infoco.ico</iconset>
+   <iconset>
+    <normaloff>img/InfoCO.png</normaloff>img/InfoCO.png</iconset>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="enabled">
@@ -47,7 +47,7 @@
      <x>10</x>
      <y>10</y>
      <width>421</width>
-     <height>499</height>
+     <height>599</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -59,13 +59,13 @@
    <property name="minimumSize">
     <size>
      <width>421</width>
-     <height>499</height>
+     <height>599</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
      <width>421</width>
-     <height>499</height>
+     <height>599</height>
     </size>
    </property>
    <property name="contextMenuPolicy">
@@ -81,7 +81,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>40</y>
+      <y>20</y>
       <width>181</width>
       <height>22</height>
      </rect>
@@ -93,12 +93,7 @@
     </item>
     <item>
      <property name="text">
-      <string>Список ПК Сталкеров</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Список Кидалов</string>
+      <string>Список Сталкеров</string>
      </property>
     </item>
     <item>
@@ -108,41 +103,36 @@
     </item>
     <item>
      <property name="text">
-      <string>Список ПК Кланов</string>
+      <string>Поиск Сталкера по имени</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Поиск ПК Сталкера по имени</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Поиск ПК Клана по названию</string>
+      <string>Поиск Клана по названию</string>
      </property>
     </item>
    </widget>
    <widget class="QLineEdit" name="LaineNameSeach">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>100</y>
+      <y>300</y>
       <width>181</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>Поиски еще не реализованы</string>
+     <string>Учитывайте регистор символов</string>
     </property>
    </widget>
    <widget class="QLabel" name="TxtNumeSeach">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>80</y>
+      <y>280</y>
       <width>171</width>
       <height>16</height>
      </rect>
@@ -155,7 +145,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>140</y>
+      <y>330</y>
       <width>181</width>
       <height>23</height>
      </rect>
@@ -171,21 +161,21 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>170</y>
+      <y>370</y>
       <width>181</width>
-      <height>171</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
       <width>181</width>
-      <height>171</height>
+      <height>61</height>
      </size>
     </property>
     <property name="maximumSize">
      <size>
       <width>181</width>
-      <height>281</height>
+      <height>171</height>
      </size>
     </property>
    </widget>
@@ -193,21 +183,21 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>40</y>
+      <y>20</y>
       <width>191</width>
-      <height>301</height>
+      <height>411</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
       <width>191</width>
-      <height>301</height>
+      <height>411</height>
      </size>
     </property>
     <property name="maximumSize">
      <size>
       <width>191</width>
-      <height>411</height>
+      <height>521</height>
      </size>
     </property>
     <property name="sortingEnabled">
@@ -218,7 +208,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>460</y>
+      <y>560</y>
       <width>401</width>
       <height>31</height>
      </rect>
@@ -260,7 +250,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>350</y>
+      <y>450</y>
       <width>421</width>
       <height>101</height>
      </rect>
@@ -341,6 +331,91 @@
       <string>Имя будет добавляться в</string>
      </property>
     </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxTypeClan">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>172</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Тип клана</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QRadioButton" name="radioBAPK">
+       <property name="text">
+        <string>АнтиПк кланы</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioBPK">
+       <property name="text">
+        <string>ПК кланы</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioBM">
+       <property name="text">
+        <string>Военизированные  кланы</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioBRP">
+       <property name="text">
+        <string>РП кланы</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioBN">
+       <property name="text">
+        <string>Нейтральные кланы</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxTypeStalkers">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Тип Сталкеров</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QRadioButton" name="radioBpk">
+       <property name="text">
+        <string>ПК Сталкеры</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioBkd">
+       <property name="text">
+        <string>Кидалы</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
  </widget>

@@ -21,7 +21,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="infoco.qrc">
-    <normaloff>:/InfoCO/infoco.ico</normaloff>:/InfoCO/infoco.ico</iconset>
+    <normaloff>img/InfoCO.png</normaloff>img/InfoCO.png</iconset>
   </property>
   <widget class="QGroupBox" name="CalcExGroupBox">
    <property name="geometry">
@@ -35,37 +35,37 @@
    <property name="title">
     <string> Количество очков опыта для перехода на след. уровень</string>
    </property>
-   <widget class="QLineEdit" name="EditNumLvl">
+   <widget class="QLineEdit" name="EditCurrentNumLvl">
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>30</y>
+      <y>20</y>
       <width>113</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>2</string>
+     <string>1</string>
     </property>
    </widget>
-   <widget class="QLabel" name="TxtNumLvl">
+   <widget class="QLabel" name="TxtCurrentNumLvl">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>30</y>
+      <y>20</y>
       <width>111</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Введите № уровня</string>
+     <string>Текущий уровень</string>
     </property>
    </widget>
    <widget class="QPushButton" name="ButtomCalc">
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>70</y>
+      <y>80</y>
       <width>111</width>
       <height>23</height>
      </rect>
@@ -98,6 +98,32 @@
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="EditDesiredNumLvl">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TxtDesiredNumLvl">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Желаемый уровень</string>
     </property>
    </widget>
   </widget>

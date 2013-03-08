@@ -26,8 +26,8 @@
    <string>Карты (С полезными метками)</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="infoco.qrc">
-    <normaloff>:/InfoCO/infoco.ico</normaloff>:/InfoCO/infoco.ico</iconset>
+   <iconset>
+    <normaloff>img/InfoCO.png</normaloff>img/InfoCO.png</iconset>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
@@ -99,12 +99,12 @@
     </item>
     <item>
      <property name="text">
-      <string>Караван</string>
+      <string>Любеч Караван</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Любеч Караван</string>
+      <string>Любеч лес (схроны)</string>
      </property>
     </item>
    </widget>
@@ -183,6 +183,12 @@
    </property>
    <property name="cursor" stdset="0">
     <cursorShape>OpenHandCursor</cursorShape>
+   </property>
+   <property name="interactive">
+    <bool>true</bool>
+   </property>
+   <property name="resizeAnchor">
+    <enum>QGraphicsView::AnchorViewCenter</enum>
    </property>
   </widget>
   <zorder>ShowGraf</zorder>

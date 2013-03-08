@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'infoco.ui'
 **
-** Created: Wed 27. Feb 18:25:57 2013
+** Created: Thu 7. Mar 18:43:45 2013
 **      by: Qt User Interface Compiler version 4.8.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -40,7 +40,7 @@ public:
         InfoCOClass->resize(315, 158);
         InfoCOClass->setMaximumSize(QSize(315, 999));
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/InfoCO/infoco.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8("img/InfoCO.png"), QSize(), QIcon::Normal, QIcon::Off);
         InfoCOClass->setWindowIcon(icon);
         MainGroupBox = new QGroupBox(InfoCOClass);
         MainGroupBox->setObjectName(QString::fromUtf8("MainGroupBox"));
@@ -92,8 +92,9 @@ public:
         MainOptionBox->clear();
         MainOptionBox->insertItems(0, QStringList()
          << QApplication::translate("InfoCOClass", "\320\232\320\260\320\273\321\214\320\272\321\203\320\273\321\217\321\202\320\276\321\200 \320\276\320\277\321\213\321\202\320\260", 0, QApplication::UnicodeUTF8)
-         << QApplication::translate("InfoCOClass", "\320\241\320\277\320\270\321\201\320\272\320\270 \320\237\320\232/\320\232\320\270\320\264\320\260\320\273\320\276\320\262/\320\232\320\273\320\260\320\275\320\276\320\262", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("InfoCOClass", "\320\241\320\277\320\270\321\201\320\272\320\270 \320\241\321\202\320\260\320\273\320\272\320\265\321\200\320\276\320\262/\320\232\320\273\320\260\320\275\320\276\320\262", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("InfoCOClass", "\320\232\320\260\321\200\321\202\321\213 \320\241\320\236", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("InfoCOClass", "\320\230\320\275\321\204\320\276\321\200\320\274\320\260\321\206\320\270\321\217 \320\277\320\276 \320\272\320\262\320\265\321\201\321\202\320\260\320\274", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("InfoCOClass", "\320\230\320\275\321\204\320\276\321\200\320\274\320\260\321\206\320\270\321\217 \320\276 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\265", 0, QApplication::UnicodeUTF8)
         );
         MainAccept->setText(QApplication::translate("InfoCOClass", "\320\237\321\200\320\270\320\275\321\217\321\202\321\214", 0, QApplication::UnicodeUTF8));

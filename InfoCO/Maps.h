@@ -7,8 +7,7 @@
 
 #include <QtGui/QDialog>
 #include <QtGui/qpainter.h>
-#include <Qt/qmouseeventtransition.h>
-#include <QMouseEvent>
+#include <QtGui/qmouseeventtransition.h>
 #include "ui_maps.h"
 
 class Maps : public QDialog
@@ -16,7 +15,7 @@ class Maps : public QDialog
 	Q_OBJECT
 
 public:
-	Maps(QWidget *parent = 0, Qt::WFlags flags = 0);
+	Maps(QWidget *parent = 0);
 	~Maps();
 
 private slots:
@@ -25,6 +24,7 @@ private slots:
 	void ZoomOutMap();
 
 private:
+	bool remove;
 	QGraphicsScene scene;
 	QGraphicsRectItem* pRectItem;
 	QGraphicsPixmapItem* pPixmapItem;

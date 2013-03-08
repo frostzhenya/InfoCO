@@ -67,6 +67,13 @@
     <ClCompile Include="GeneratedFiles\Release\moc_Maps.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="quest.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_quest.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_quest.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="infoco.ui">
@@ -88,6 +95,10 @@
       <Filter>Form Files</Filter>
     </CustomBuild>
     <CustomBuild Include="Maps.h" />
+    <CustomBuild Include="quest.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="quest.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_infoco.h">
@@ -106,6 +117,9 @@
       <Filter>data</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_maps.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_quest.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -21,7 +21,6 @@ private slots:
 	void CalcToExp();
 
 private:
-	int NumLvl;
 	Ui::FormCalcEx ui;
 };
 

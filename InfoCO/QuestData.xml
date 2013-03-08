@@ -1,0 +1,138 @@
+<?xml version='1.0'?>
+<QuestData>
+	<NameNpcStation id="1">Бродяга</NameNpcStation>
+	<NameNpcStation id="2">Дежурный</NameNpcStation>
+	<NameNpcStation id="3">Серый</NameNpcStation>
+	<NameNpcStation id="4">Харон</NameNpcStation>
+	<NameNpcStation id="5">Скупщик</NameNpcStation>
+	<NameNpcStation id="6">Миша Качегаров</NameNpcStation>
+	<NameNpcTerminal id="1">Прохор Путейщик</NameNpcTerminal>
+	<NameNpcTerminal id="2">Кузнец</NameNpcTerminal>
+	<NameNpcTerminal id="3">Коля Кислый</NameNpcTerminal>
+	<NameNpcTerminal id="4">Сизиф</NameNpcTerminal>
+	<NameNpcTerminal id="5">Павел</NameNpcTerminal>
+	<NameNpcTerminal id="6">Темыч Сталкер</NameNpcTerminal>
+	<NameNpcTerminal id="7">Печкин</NameNpcTerminal>
+	<NameNpcTerminal id="8">Сталкер Бомж</NameNpcTerminal>
+	<NameNpcTerminal id="9">Бомжи</NameNpcTerminal>
+	<NameNpcTerminal id="10">Бармен Плющ</NameNpcTerminal>
+	<NameNpcTerminal id="11">Миша Охотник</NameNpcTerminal>
+	<NameNpcTerminal id="12">Старый Сталкер</NameNpcTerminal>
+	<NameNpcTerminal id="13">ПДА Мертвого Сталкера</NameNpcTerminal>
+	<NameNpcTerminal id="14">Палка</NameNpcTerminal>
+	<NameNpcTerminal id="15">Грек</NameNpcTerminal>
+	<NameNpcTerminal id="16">Алекс</NameNpcTerminal>
+	<NameNpcTerminal id="17">Рашид</NameNpcTerminal>
+	<NameNpcTerminal id="18">Cержант Драчук</NameNpcTerminal>
+	<NameNpcTerminal id="19">Сержант Дибенко</NameNpcTerminal>
+	<NameNpcTerminal id="20">Штакет</NameNpcTerminal>
+	<NameNpcTerminal id="21">Доктор Зиновьев</NameNpcTerminal>
+	<NameNpcTerminal id="22">Капустин</NameNpcTerminal>
+	<NameNpcTerminal id="23">Курьер</NameNpcTerminal>
+	<NameNpcTerminal id="24">Метрофан</NameNpcTerminal>
+	<NameNpcTerminal id="25">Шляпник</NameNpcTerminal>
+	<NameNpcTerminal id="26">Микуло</NameNpcTerminal>
+	<NameNpcTerminal id="27">Степан Бродяга</NameNpcTerminal>
+	<NameNpcTerminal id="28">Жора Карась</NameNpcTerminal>
+	<NameNpcTerminal id="29">Дима</NameNpcTerminal>
+	<NameNpcTerminal id="30">Каштан</NameNpcTerminal>
+	<NameNpcTerminal id="31">Федор</NameNpcTerminal>
+	<NameNpcTerminal id="32">Ефрейтор Казаков</NameNpcTerminal>
+	<NameNpcTerminal id="33">Ефрейтор Друзь</NameNpcTerminal>
+	<NameNpcTerminal id="34">Ефреитор Квашин</NameNpcTerminal>
+	<NameNpcTerminal id="35">Валера</NameNpcTerminal>
+	<NameNpcTerminal id="36">Федя Пророк</NameNpcTerminal>
+	<NameNpcTerminal id="37">Санек Бывалый</NameNpcTerminal>
+	<NameNpcTerminal id="38">Басмач</NameNpcTerminal>
+	<NameNpcTerminal id="39">Подозрительный кладовщик</NameNpcTerminal>
+	<NameNpcForest id="1">Скупщик хабара</NameNpcForest>
+	<NameNpcForest id="2">Яшка Тварь</NameNpcForest>
+	<NameNpcForest id="3">Поп</NameNpcForest>
+	<NameNpcForest id="4">Прапорщик Ничепоренко</NameNpcForest>
+	<NameNpcForest id="5">Коля Тесла</NameNpcForest>
+	<NameNpcForest id="6">Гурман</NameNpcForest>
+	<NameNpcForest id="7">Морозов</NameNpcForest>
+	<NameNpcForest id="8">Глеб Маслов</NameNpcForest>
+	<NameNpcForest id="9">Имарек</NameNpcForest>
+	<NameNpcForest id="10">Васятка</NameNpcForest>
+	<NameNpcForest id="11">Доктор Эйзенштейн</NameNpcForest>
+	<NameNpcForest id="12">Профессор Шлеймович</NameNpcForest>
+	<NameNpcForest id="13">Капитан Шперлинг</NameNpcForest>
+	<NameNpcForest id="14">Кич</NameNpcForest>
+	<NameNpcForest id="15">Буч</NameNpcForest>
+	<NameNpcForest id="16">Тэклберри</NameNpcForest>
+	<NameNpcForest id="17">Шкуркин</NameNpcForest>
+	<NameNpcForest id="18">Хитрец</NameNpcForest>
+	<NameNpcForest id="19">Болотник</NameNpcForest>
+	<NameNpcForest id="20">Татарин</NameNpcForest>
+	<NameNpcForest id="21">Тимка</NameNpcForest>
+	<NameNpcForest id="22">Капитан Блждада</NameNpcForest>
+	<NameNpcForest id="23">Мухомор</NameNpcForest>
+	<NameNpcForest id="24">Святой Наставник Михаил</NameNpcForest>
+	<NameNpcForest id="25">Крендель</NameNpcForest>
+	<NameNpcForest id="26">Крол</NameNpcForest>
+	<NameNpcForest id="27">Коробочка</NameNpcForest>
+	<NameNpcForest id="28">Ветеринар</NameNpcForest>
+	<NameNpcForest id="29">Мокрух</NameNpcForest>
+	<NameNpcForest id="30">Лысый</NameNpcForest>
+	<NameNpcForest id="31">Заяц</NameNpcForest>
+	<NameNpcForest id="32">Воронин</NameNpcForest>
+	<NameNpcForest id="33">Масленков</NameNpcForest>
+	<NameNpcForest id="34">Гришковец</NameNpcForest>
+	<NameNpcForest id="35">Грязный Юрий</NameNpcForest>
+	<NameNpcForest id="36">Косматый</NameNpcForest>
+	<NameNpcForest id="37">Дудочник</NameNpcForest>
+	<NameNpcForest id="38">Ловчий</NameNpcForest>
+	<NameNpcVesuvius id="1">Ахмед</NameNpcVesuvius>
+	<NameNpcVesuvius id="2">Айболит</NameNpcVesuvius>
+	<NameNpcVesuvius id="3">Фин</NameNpcVesuvius>
+	<NameNpcVesuvius id="4">Мусорщик</NameNpcVesuvius>
+	<NameNpcVesuvius id="5">Зеленкин</NameNpcVesuvius>
+	<NameNpcVesuvius id="6">Обворованный сталкер</NameNpcVesuvius>
+	<NameNpcVesuvius id="7">Следователь</NameNpcVesuvius>
+	<NameNpcVesuvius id="8">Сборщик</NameNpcVesuvius>
+	<NameNpcVesuvius id="9">Патиссон</NameNpcVesuvius>
+	<NameNpcVesuvius id="10">Доцент Симонов</NameNpcVesuvius>
+	<NameNpcVesuvius id="11">Доцент Краснов</NameNpcVesuvius>
+	<NameNpcVesuvius id="12">Профессор Черешников</NameNpcVesuvius>
+	<NameNpcVesuvius id="13">Доктор Живодеров</NameNpcVesuvius>
+	<NameNpcVesuvius id="14">Доктор Дом</NameNpcVesuvius>
+	<NameNpcVesuvius id="15">Ватман</NameNpcVesuvius>
+	<NameNpcVesuvius id="16">Хмырь</NameNpcVesuvius>
+	<NameNpcVesuvius id="17">Бармен</NameNpcVesuvius>
+	<NameNpcVesuvius id="18">Отшельник Тимоха</NameNpcVesuvius>
+	<NameNpcTheNewEarth id="1">Плевок-Барыга</NameNpcTheNewEarth>
+	<NameNpcTheNewEarth id="2">Проводник (до Тунгузки)</NameNpcTheNewEarth>
+	<NameNpcTunguska id="1">Отставной Полковник</NameNpcTunguska>
+	<NameNpcTunguska id="2">Сталкер Штопор</NameNpcTunguska>
+	<NameNpcTunguska id="3">Митька</NameNpcTunguska>
+	<QuestStation id="1">
+		<quest>Бродяга квестов не дает.</quest>
+		<pos>Местоположение NPC: за вашей спиной;</pos>
+		<text>После создания нового персонажа у вас появляется возможность пройти или же не пройти обучение, итак если решились то:Вас кидает в какую то глушь, темно хоть глаз выкали, позади стоит Бродяга, расскажет о конвое и аварии, пропросит поискать выживших.</text>
+		<award>Награда - опыт: поддержка +10;</award>
+		<item></item>
+	</QuestStation>
+	<QuestStation id="2">
+		<quest>Говорим с Дежурным, получаем квест.</quest>
+		<pos>Местоположение NPC: на станции;</pos>
+		<text>Здание: убить 5 крыс.</text>
+		<award>Награда - опыт: боевой +10, выживание +30, поддержка +20;</award>
+		<item>Награда - вещь: патроны к ПМ (81шт);</item>
+	</QuestStation>
+	<QuestStation id="3">
+		<quest>Предыдущее задание: Дежурный.</quest>
+		<pos>Местоположение NPC: на станции возле Доктора;</pos>
+		<text>Здание: убить 5 крыс-убийц (квадрат А2 - 4 клетка, самый низ, там и тело лежит, но при обыске ничего не наидете, хать Серый и говорит про ПМ).</text>
+		<award>Награда - опыт: выживание +10, поддержка +50;</award>
+		<item>Награда - вещь: Патроны ПМ (27шт.);<br/></item>
+		<text>Здание 2(ЕЖЕДНЕВКА): крысы для Серого, убить 10 крыс;</text>
+		<rep>Награда - репутация: сталкеры +200, торговцы -40, свободный бартер +100, бандиты +50, вороний лес -200, охотники +20, ученые +20, белое братство +20; опыт: выживание +10, поддержка +10;</rep>
+	</QuestStation>
+	<QuestStation id="4">
+	</QuestStation>
+	<QuestStation id="5">
+	</QuestStation>
+	<QuestStation id="6">
+	</QuestStation>
+</QuestData>
