@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'quest.h'
 **
-** Created: Wed 6. Mar 19:47:45 2013
+** Created: Sat 16. Mar 19:47:25 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_quest[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -33,13 +33,20 @@ static const uint qt_meta_data_quest[] = {
  // slots: signature, parameters, type, tag, flags
        7,    6,    6,    6, 0x08,
       27,    6,    6,    6, 0x08,
+      51,    6,    6,    6, 0x08,
+      76,    6,    6,    6, 0x08,
+     100,    6,    6,    6, 0x08,
+     128,    6,  124,    6, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_quest[] = {
     "quest\0\0ButtomChoiceClick()\0"
-    "ButtomButtomChoiceNameClick()\0"
+    "ButtomChoiceNameClick()\0"
+    "ButtomChoiceQuestClick()\0"
+    "ButtonGoalToMapsClick()\0ButtomShowNpcMapClick()\0"
+    "int\0returnCountGoal()\0"
 };
 
 void quest::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -49,11 +56,15 @@ void quest::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         quest *_t = static_cast<quest *>(_o);
         switch (_id) {
         case 0: _t->ButtomChoiceClick(); break;
-        case 1: _t->ButtomButtomChoiceNameClick(); break;
+        case 1: _t->ButtomChoiceNameClick(); break;
+        case 2: _t->ButtomChoiceQuestClick(); break;
+        case 3: _t->ButtonGoalToMapsClick(); break;
+        case 4: _t->ButtomShowNpcMapClick(); break;
+        case 5: { int _r = _t->returnCountGoal();
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = _r; }  break;
         default: ;
         }
     }
-    Q_UNUSED(_a);
 }
 
 const QMetaObjectExtraData quest::staticMetaObjectExtraData = {
@@ -88,9 +99,9 @@ int quest::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 6;
     }
     return _id;
 }

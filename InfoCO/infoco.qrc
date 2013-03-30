@@ -1,5 +1,13 @@
 <RCC>
     <qresource prefix="/">
         <file>img/infoco.png</file>
+        <file>img/texture/main.png</file>
+        <file>img/texture/buttom.png</file>
+        <file>img/texture/texture.png</file>
+        <file>img/texture/buttom_small.png</file>
+        <file>img/texture/main_small.png</file>
+        <file>img/texture/buttom_main.png</file>
+        <file>img/texture/buttom_info.png</file>
+        <file>img/sZOInfo.png</file>
     </qresource>
 </RCC>

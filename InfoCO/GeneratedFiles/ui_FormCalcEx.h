@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'FormCalcEx.ui'
 **
-** Created: Tue 5. Mar 19:27:51 2013
+** Created: Tue 26. Mar 18:37:08 2013
 **      by: Qt User Interface Compiler version 4.8.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -42,7 +42,7 @@ public:
         FormCalcEx->resize(382, 231);
         FormCalcEx->setMaximumSize(QSize(382, 231));
         QIcon icon;
-        icon.addFile(QString::fromUtf8("img/InfoCO.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8("img/sZOInfo.png"), QSize(), QIcon::Normal, QIcon::Off);
         FormCalcEx->setWindowIcon(icon);
         CalcExGroupBox = new QGroupBox(FormCalcEx);
         CalcExGroupBox->setObjectName(QString::fromUtf8("CalcExGroupBox"));

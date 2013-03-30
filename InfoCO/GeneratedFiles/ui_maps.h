@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'maps.ui'
 **
-** Created: Thu 7. Mar 19:48:07 2013
+** Created: Tue 26. Mar 18:37:08 2013
 **      by: Qt User Interface Compiler version 4.8.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -43,7 +43,7 @@ public:
         Maps->setMinimumSize(QSize(139, 291));
         Maps->setMaximumSize(QSize(800, 700));
         QIcon icon;
-        icon.addFile(QString::fromUtf8("img/InfoCO.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8("img/sZOInfo.png"), QSize(), QIcon::Normal, QIcon::Off);
         Maps->setWindowIcon(icon);
         groupBox = new QGroupBox(Maps);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));

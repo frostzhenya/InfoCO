@@ -3,84 +3,145 @@
 */
 
 #include "quest.h"
+#include <QtSql/QSqlQuery>
+#include "GoalMaps.h"
+
+// преобразование
+QString IntToQStr(int integer)
+{
+	char buf[10];
+	sprintf(buf,"%d",integer);
+	return buf;
+}
 
 quest::quest(QWidget *parent): QDialog(parent)
 {
 	ui.setupUi(this);
 
 	connect(ui.ButtomChoice,SIGNAL(clicked()),this,SLOT(ButtomChoiceClick()));
-	connect(ui.ButtomChoiceName,SIGNAL(clicked()),this,SLOT(ButtomButtomChoiceNameClick()));
-
-	xml = new xmlData("QuestData.xml");
-	xml->OpenXml(); // требуется проверка загрузился ли файл
+	connect(ui.ButtomChoiceName,SIGNAL(clicked()),this,SLOT(ButtomChoiceNameClick()));
+	connect(ui.ButtomChoiceQuest,SIGNAL(clicked()),this,SLOT(ButtomChoiceQuestClick()));
+	connect(ui.ButtonClose,SIGNAL(clicked()),this,SLOT(accept()));
+	connect(ui.ButtonGoalToMaps,SIGNAL(clicked()),this,SLOT(ButtonGoalToMapsClick()));
+	connect(ui.ButtonShowNpcMap,SIGNAL(clicked()),this,SLOT(ButtomShowNpcMapClick()));
 
 	// нач. настройки
 	ui.OptDopBox->setVisible(false);
 	ui.MainBox->setVisible(false);
+	ui.OptQuestBox->setVisible(false);
+	
+	DB.createConnection();
 }
 
 quest::~quest()
 {
 }
 
+/*
+* ui.LocBox - локация
+*/
 void quest::ButtomChoiceClick()
 {
-	int currentindex = ui.LocBox->currentIndex();
-
 	ui.OptDopBox->setVisible(true);
-	ui.MainBox->setVisible(true);
-
 	ui.NameBox->clear();
 
-	switch(currentindex)
+	DB.ShowQComboBoxNameNpc(ui.NameBox,"SELECT name FROM questNPC WHERE map = '"+IntToQStr(ui.LocBox->currentIndex())+"';");
+}
+
+void quest::ButtomChoiceNameClick()
+{
+	ui.OptQuestBox->setVisible(true);
+	ui.QuestBox->clear();
+
+	QSqlQuery idNPCquery;
+	idNPCquery = DB.query("SELECT id FROM questNPC WHERE name = '"+ui.NameBox->currentText()+"';");
+
+	QSqlRecord recIdNpc = idNPCquery.record();
+
+	while (idNPCquery.next())
 	{
-	case 0:
-		xml->ShowXmlfullQComboBox(ui.NameBox, "NameNpcStation");
-		break;
-	case 1:
-		xml->ShowXmlfullQComboBox(ui.NameBox, "NameNpcTerminal");
-		break;
-	case 2:
-		xml->ShowXmlfullQComboBox(ui.NameBox, "NameNpcForest");
-		break;
-	case 3:
-		xml->ShowXmlfullQComboBox(ui.NameBox, "NameNpcVesuvius");
-		break;
-	case 4:
-		xml->ShowXmlfullQComboBox(ui.NameBox, "NameNpcTheNewEarth");
-		break;
-	case 5:
-		xml->ShowXmlfullQComboBox(ui.NameBox, "NameNpcTunguska");
-		break;
+		idNPC = idNPCquery.value(recIdNpc.indexOf("id")).toInt();
+	}
+
+	DB.ShowQComboBoxNameQuest(ui.QuestBox,"SELECT nameQuest FROM quest WHERE idNPC = "+IntToQStr(idNPC)+";");
+}
+
+void quest::ButtomChoiceQuestClick()
+{
+	ui.MainBox->setVisible(true);
+	ui.lineDaly->clear();
+	ui.lineInfo->clear();
+	ui.textAward->clear();
+	ui.textItem->clear();
+	ui.textRep->clear();
+
+	QSqlQuery result, posNpcData;
+	bool goalQuest;
+
+	result = DB.query("SELECT * FROM quest WHERE idNPC = '"+IntToQStr(idNPC)+"' AND nameQuest = '"+ui.QuestBox->currentText()+"';");
+	posNpcData = DB.query("SELECT * FROM questNPC WHERE id =  '"+IntToQStr(idNPC)+"';");
+
+	// Данные по квесту
+	QSqlRecord rec = result.record();
+	while (result.next())
+	{
+		ui.lineDaly->setText(result.value(rec.indexOf("dailyQuest")).toString());
+		ui.lineInfo->setText(result.value(rec.indexOf("textQuest")).toString());
+		ui.textAward->setText(result.value(rec.indexOf("award")).toString());
+		ui.textItem->setText(result.value(rec.indexOf("item")).toString());
+		ui.textRep->setText(result.value(rec.indexOf("rep")).toString());
+		mapX[0] = result.value(rec.indexOf("x0")).toInt();
+		mapX[1] = result.value(rec.indexOf("x1")).toInt();
+		mapX[2] = result.value(rec.indexOf("x2")).toInt();
+		mapX[3] = result.value(rec.indexOf("x3")).toInt();
+		mapY[0] = result.value(rec.indexOf("y0")).toInt();
+		mapY[1] = result.value(rec.indexOf("y1")).toInt();
+		mapY[2] = result.value(rec.indexOf("y2")).toInt();
+		mapY[3] = result.value(rec.indexOf("y3")).toInt();
+		Tmap[0] = result.value(rec.indexOf("map0")).toInt();
+		Tmap[1] = result.value(rec.indexOf("map1")).toInt();
+		Tmap[2] = result.value(rec.indexOf("map2")).toInt();
+		Tmap[3] = result.value(rec.indexOf("map3")).toInt();
+
+		/*if(goalQuest = result.value(rec.indexOf("goalQuest")).toInt())
+			ui.ButtonGoalToMaps->enabledChange(true);
+		else
+			ui.ButtonGoalToMaps->enabledChange(true);*/
+	}
+
+	//данныe по NPC
+	QSqlRecord recPosNpcData = posNpcData.record();
+	while (posNpcData.next())
+	{
+		posNpcX = posNpcData.value(recPosNpcData.indexOf("x")).toInt();
+		posNpcY = posNpcData.value(recPosNpcData.indexOf("y")).toInt();
+		posNpcMap = posNpcData.value(recPosNpcData.indexOf("map")).toInt();
 	}
 }
 
-void quest::ButtomButtomChoiceNameClick()
+void quest::ButtonGoalToMapsClick()
 {
-	int currentindexName = ui.NameBox->currentIndex();
-	int currentindex = ui.LocBox->currentIndex();
+	GoalMaps form(0,mapX[0], mapY[0], Tmap[0], 1, returnCountGoal());
+	form.setCoordinates(mapX, mapY, Tmap);
+	form.exec();
+}
 
-	ui.textEdit->clear();
-	//xml->ShowXmlQuest(ui.textEdit, "QuestStation", xml->ReturnDomElement(), currentindexName);
-	switch(currentindex)
+void quest::ButtomShowNpcMapClick()
+{
+	GoalMaps form(0,posNpcX, posNpcY, posNpcMap, 0, 0);
+	form.exec();
+}
+
+int quest::returnCountGoal()
+{
+	int count = 0;
+
+	for(int i=0; i < 4; i++)
 	{
-	case 0:
-		xml->ShowXmlQuest(ui.textEdit, "QuestStation", xml->ReturnDomElement(), currentindexName);
-		break;
-	case 1:
-		xml->ShowXmlQuest(ui.textEdit, "QuestTerminal", xml->ReturnDomElement(), currentindexName);
-		break;
-	case 2:
-		xml->ShowXmlQuest(ui.textEdit, "QuestForest", xml->ReturnDomElement(), currentindexName);
-		break;
-	case 3:
-		xml->ShowXmlQuest(ui.textEdit, "QuestVesuvius", xml->ReturnDomElement(), currentindexName);
-		break;
-	case 4:
-		xml->ShowXmlQuest(ui.textEdit, "QuestTheNewEarth", xml->ReturnDomElement(), currentindexName);
-		break;
-	case 5:
-		xml->ShowXmlQuest(ui.textEdit, "NameNpcTunguska", xml->ReturnDomElement(), currentindexName);
-		break;
+		if(mapX[i] != 0 && mapY[i] != 0)
+			count++;
+		else
+			break;
 	}
+	return count;
 }

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InfoProgramm</class>
+ <widget class="QDialog" name="InfoProgramm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>867</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>867</width>
+    <height>377</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>867</width>
+    <height>377</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>7</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Информация о программе</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="infoco.qrc">
+    <normaloff>:/img/sZOInfo.png</normaloff>:/img/sZOInfo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/img/texture/main.png);</string>
+  </property>
+  <widget class="QPushButton" name="ButtonClose">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>330</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>214</red>
+         <green>183</green>
+         <blue>67</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>214</red>
+         <green>183</green>
+         <blue>67</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>214</red>
+         <green>183</green>
+         <blue>67</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>214</red>
+         <green>183</green>
+         <blue>67</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>120</red>
+         <green>120</green>
+         <blue>120</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>120</red>
+         <green>120</green>
+         <blue>120</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/img/texture/buttom_small.png);
+border-image: url(:/img/texture/texture.png);</string>
+   </property>
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>130</y>
+     <width>641</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/img/texture/texture.png);</string>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe Print'; font-size:11pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#bf4000;&quot;&gt;    Программа написана для того, что бы не заходить на форум CO по 100-200 раз за одной и той же инфой.&lt;br /&gt;    В ней вы можете найти информацию: о кол-ве опыта для повышение уровня, просмотреть какие существуют группировки,каким сталкерам доверять нельзя, карты с некоторыми указанными точками и многое другое.&lt;br /&gt;&lt;br /&gt;    Программа писалась (пишется) исключительно в обучающих целях на Qt 4.8.3 &amp;amp; c++ для Windows x32/x86.&lt;br /&gt;    Вся информация касательно сталкера взята с форума. Людям, которые выложили инфу, огромное спасибо!!!&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot; color:#bf4000;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; color:#40ff00;&quot;&gt;Автор программы:&lt;/span&gt; Lovepsone;&lt;br /&gt;&lt;span style=&quot; color:#bf4000;&quot;&gt;    &lt;/span&gt;Лицензия: &lt;a href=&quot;http://www.gnu.org/licenses/gpl&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;GNU General Public License (GPL) V3.0&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot; color:#bf4000;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; color:#40ff00;&quot;&gt;Пользователи, которые помогают(помогли) развивать проект:&lt;/span&gt;&lt;br /&gt;   &lt;span style=&quot; color:#ff0000;&quot;&gt;Serjjj - идея создания проги была его (фактически писалась она для нашего клана);&lt;br /&gt;&lt;/span&gt;   &lt;span style=&quot; color:#ff0000;&quot;&gt;Феникс63 - идея с калькулятором;&lt;br /&gt;&lt;/span&gt;   &lt;span style=&quot; color:#ff0000;&quot;&gt;Montrezor - представил карту со схронами;&lt;br /&gt;&lt;/span&gt;   &lt;span style=&quot; color:#ff0000;&quot;&gt;Grishkovec - за новые идеи со списком, а также предоставил свой список;&lt;br /&gt;&lt;/span&gt;   &lt;span style=&quot; color:#ff0000;&quot;&gt;paskiller - идея парса(будет в следующей версии);&lt;br /&gt;kosh@ - идея миниблокнота;&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot; color:#bf4000;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; color:#40ff00;&quot;&gt;Инфа о версиях программы:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- v 1.0.0 - Создана сама программа,с калькулятором опыта;&lt;br /&gt;- v 1.0.1 - Добавлен раздел &amp;lt;Списки ПК/Кидалов/Кланов&amp;gt;;&lt;br /&gt;- v 1.0.2 - Добавлена возможность редактирования списков;&lt;br /&gt;- v 1.0.3 - Добавлен раздел &amp;lt;Карты&amp;gt;;&lt;br /&gt;- v 1.0.4 - Обновлен раздел &amp;lt;Списки ПК/Кидалов/Кланов&amp;gt;;&lt;br /&gt;- v 1.0.5 - Добавленa возможность поиска по спискам, fix small bugs;&lt;br /&gt;- v 1.0.6 - Иправлен вылет при просмотре карт;&lt;br /&gt;- v 1.0.7 - Реализация идеи Феникс63, правки орфографии;&lt;br /&gt;- v 1.0.8 - Конвертирование карт в .png и Реконструкция относительных путей;&lt;br /&gt;- v 2.0.0 - Стабильная версия, включены иконки;&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot; color:#bf4000;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; color:#40ff00;&quot;&gt;Немного инфы по следующей версии программы (приблизительный список изменений):&lt;/span&gt;&lt;br /&gt;- Добавлю раздел &amp;lt;инфа по квестам&amp;gt;;&lt;br /&gt;- При просмотре карт, окно программы центрировало карту на нач. точку;&lt;br /&gt;- Обновление списков по кланам;&lt;br /&gt;- Возможность поиска по спискам без учета регистра;&lt;br /&gt;- Реализация идей сталкеров таких как Grishkovec,paskiller,kosh@(идеи их ищите в теме);&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#bf4000;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; color:#40ff00;&quot;&gt;Планы на будущее программы:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Добавление нового раздела &amp;lt;Списки ПК/Кидалов/Кланов&amp;gt; - реализовано в v 1.0.1;&lt;br /&gt;- Добавление возможности редактировать списки - реализовано в v 1.0.2;&lt;br /&gt;- Добавление возможности сортировать списки;&lt;br /&gt;- Добавление возможности поиска по спискам - реализовано в v 1.0.5;&lt;br /&gt;- Добавление нового раздела &amp;lt;Карты&amp;gt;(пока только для х32/86 систем) - реализовано в v 1.0.3;&lt;br /&gt;- Добавление нового раздела &amp;lt;Инфа по торговцам&amp;gt;;&lt;br /&gt;- Добавление нового раздела &amp;lt;Информация по квестам&amp;gt;;&lt;br /&gt;- Поддержка х64 - реализовано в v 2.0.0;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#bf4000;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; color:#40ff00;&quot;&gt;Требования для запуска программы:&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;- Microsoft .NET Framework 4.0;&lt;br /&gt;- VC REDIST для 2010 VC;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="infoco.qrc"/>
+ </resources>
+ <connections/>
+</ui>

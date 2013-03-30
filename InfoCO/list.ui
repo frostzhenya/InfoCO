@@ -36,7 +36,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>img/InfoCO.png</normaloff>img/InfoCO.png</iconset>
+    <normaloff>img/sZOInfo.png</normaloff>img/sZOInfo.png</iconset>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="enabled">
@@ -119,7 +119,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>300</y>
+      <y>320</y>
       <width>181</width>
       <height>20</height>
      </rect>
@@ -132,7 +132,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>280</y>
+      <y>300</y>
       <width>171</width>
       <height>16</height>
      </rect>
@@ -145,7 +145,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>330</y>
+      <y>350</y>
       <width>181</width>
       <height>23</height>
      </rect>
@@ -161,9 +161,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>370</y>
+      <y>380</y>
       <width>181</width>
-      <height>61</height>
+      <height>161</height>
      </rect>
     </property>
     <property name="minimumSize">
@@ -185,7 +185,7 @@
       <x>220</x>
       <y>20</y>
       <width>191</width>
-      <height>411</height>
+      <height>521</height>
      </rect>
     </property>
     <property name="minimumSize">
@@ -215,13 +215,6 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="ButtomEditList">
-       <property name="text">
-        <string>Редактировать список</string>
-       </property>
-      </widget>
-     </item>
-     <item>
       <spacer name="horizontalSpacer">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -243,102 +236,13 @@
      </item>
     </layout>
    </widget>
-   <widget class="QGroupBox" name="groupBoxEdit">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>450</y>
-      <width>421</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>0</width>
-      <height>0</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>421</width>
-      <height>101</height>
-     </size>
-    </property>
-    <property name="title">
-     <string>Редактирование списка</string>
-    </property>
-    <widget class="QPushButton" name="ButtomEditListClose">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>70</y>
-       <width>111</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Скрыть панель</string>
-     </property>
-    </widget>
-    <widget class="QWidget" name="horizontalLayoutWidget_2">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>40</y>
-       <width>311</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <widget class="QPushButton" name="ButtomAddName">
-        <property name="text">
-         <string>Добавить имя в список</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="EditName"/>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QLabel" name="TxtEditList">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>20</y>
-       <width>311</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Имя будет добавляться в</string>
-     </property>
-    </widget>
-   </widget>
    <widget class="QGroupBox" name="groupBoxTypeClan">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>50</y>
       <width>172</width>
-      <height>131</height>
+      <height>151</height>
      </rect>
     </property>
     <property name="title">
@@ -383,13 +287,20 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QRadioButton" name="radioN">
+       <property name="text">
+        <string>Наемники</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QGroupBox" name="groupBoxTypeStalkers">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>190</y>
+      <y>220</y>
       <width>171</width>
       <height>71</height>
      </rect>

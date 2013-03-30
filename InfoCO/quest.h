@@ -7,7 +7,7 @@
 
 #include <QtGui/QDialog>
 #include "ui_quest.h"
-#include "xmlData.h"
+#include "SqlliteDB.h"
 
 class quest : public QDialog
 {
@@ -19,10 +19,18 @@ public:
 
 private slots:
 	void ButtomChoiceClick();
-	void ButtomButtomChoiceNameClick();
+	void ButtomChoiceNameClick();
+	void ButtomChoiceQuestClick();
+	void ButtonGoalToMapsClick();
+	void ButtomShowNpcMapClick();
+	int returnCountGoal();
 
 private:
-	xmlData* xml;
+	int mapX[4], mapY[4], Tmap[4];
+	int posNpcX, posNpcY, posNpcMap;
+	int idNPC;
+	
+	SqlliteDB DB;
 	Ui::quest ui;
 };
 

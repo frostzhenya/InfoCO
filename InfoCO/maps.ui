@@ -27,7 +27,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>img/InfoCO.png</normaloff>img/InfoCO.png</iconset>
+    <normaloff>img/sZOInfo.png</normaloff>img/sZOInfo.png</iconset>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">

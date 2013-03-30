@@ -28,6 +28,12 @@
       <Extensions>cpp;cxx;c;def</Extensions>
       <ParseFiles>true</ParseFiles>
     </Filter>
+    <Filter Include="editdb">
+      <UniqueIdentifier>{73e5ce19-5528-41c1-b2ee-347611ba7abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="more">
+      <UniqueIdentifier>{888042e8-77a7-47d2-ab02-a3ff8fd40050}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeneratedFiles\Debug\moc_infoco.cpp">
@@ -54,9 +60,6 @@
     <ClCompile Include="GeneratedFiles\Release\moc_List.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="xmlData.cpp">
-      <Filter>data</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -73,6 +76,59 @@
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_quest.cpp">
       <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SqlliteDB.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="miniNotebook.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_miniNotebook.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_miniNotebook.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GoalMaps.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GoalMaps.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoProgram.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_InfoProgram.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_InfoProgram.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="EditQuest.cpp">
+      <Filter>editdb</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EditQuest.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EditQuest.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GoalMaps.cpp">
+      <Filter>more</Filter>
+    </ClCompile>
+    <ClCompile Include="MapsGeometry.cpp">
+      <Filter>more</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SceneGeometry.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SceneGeometry.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MapsGeometry.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MapsGeometry.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGeometry.cpp">
+      <Filter>more</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +155,35 @@
       <Filter>Form Files</Filter>
     </CustomBuild>
     <CustomBuild Include="quest.h" />
+    <CustomBuild Include="miniNotebook.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="miniNotebook.h" />
+    <CustomBuild Include="GoalMaps.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="InfoProgram.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="InfoProgram.h" />
+    <CustomBuild Include="EditQuest.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EditQuest.h">
+      <Filter>editdb</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MapsGeometry.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GoalMaps.h">
+      <Filter>more</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SceneGeometry.h">
+      <Filter>more</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MapsGeometry.h">
+      <Filter>more</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_infoco.h">
@@ -113,13 +198,28 @@
     <ClInclude Include="resource.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="xmlData.h">
-      <Filter>data</Filter>
-    </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_maps.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_quest.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SqlliteDB.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_miniNotebook.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_GoalMaps.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_InfoProgram.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_EditQuest.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MapsGeometry.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>

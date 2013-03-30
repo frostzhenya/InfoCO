@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'quest.ui'
 **
-** Created: Wed 6. Mar 20:55:11 2013
+** Created: Tue 26. Mar 18:37:09 2013
 **      by: Qt User Interface Compiler version 4.8.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -20,8 +20,10 @@
 #include <QtGui/QHBoxLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
+#include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
-#include <QtGui/QTextEdit>
+#include <QtGui/QSpacerItem>
+#include <QtGui/QTextBrowser>
 #include <QtGui/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
@@ -40,8 +42,33 @@ public:
     QLabel *label;
     QComboBox *NameBox;
     QPushButton *ButtomChoiceName;
+    QGroupBox *OptQuestBox;
+    QLabel *txtQuest;
+    QComboBox *QuestBox;
+    QPushButton *ButtomChoiceQuest;
     QGroupBox *MainBox;
-    QTextEdit *textEdit;
+    QVBoxLayout *verticalLayout_5;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *txtPosNpc;
+    QPushButton *ButtonShowNpcMap;
+    QSpacerItem *horizontalSpacer_2;
+    QHBoxLayout *horizontalLayout_4;
+    QLabel *TxtDaly;
+    QLineEdit *lineDaly;
+    QVBoxLayout *verticalLayout_3;
+    QLabel *txtInfo;
+    QTextBrowser *lineInfo;
+    QVBoxLayout *verticalLayout_4;
+    QLabel *txtAward;
+    QTextBrowser *textAward;
+    QLabel *txtItem;
+    QTextBrowser *textItem;
+    QLabel *txtRep;
+    QTextBrowser *textRep;
+    QHBoxLayout *horizontalLayout_8;
+    QPushButton *ButtonGoalToMaps;
+    QSpacerItem *horizontalSpacer;
+    QPushButton *ButtonClose;
 
     void setupUi(QDialog *quest)
     {
@@ -50,6 +77,9 @@ public:
         quest->resize(642, 547);
         quest->setMinimumSize(QSize(0, 0));
         quest->setMaximumSize(QSize(642, 547));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("img/sZOInfo.png"), QSize(), QIcon::Normal, QIcon::Off);
+        quest->setWindowIcon(icon);
         quest->setLayoutDirection(Qt::LeftToRight);
         quest->setAutoFillBackground(false);
         verticalLayout = new QVBoxLayout(quest);
@@ -103,19 +133,236 @@ public:
 
         verticalLayout->addWidget(OptDopBox);
 
+        OptQuestBox = new QGroupBox(quest);
+        OptQuestBox->setObjectName(QString::fromUtf8("OptQuestBox"));
+        OptQuestBox->setMinimumSize(QSize(624, 50));
+        OptQuestBox->setMaximumSize(QSize(624, 50));
+        txtQuest = new QLabel(OptQuestBox);
+        txtQuest->setObjectName(QString::fromUtf8("txtQuest"));
+        txtQuest->setGeometry(QRect(10, 23, 95, 16));
+        QuestBox = new QComboBox(OptQuestBox);
+        QuestBox->setObjectName(QString::fromUtf8("QuestBox"));
+        QuestBox->setGeometry(QRect(113, 23, 391, 16));
+        QuestBox->setMaximumSize(QSize(16777215, 50));
+        ButtomChoiceQuest = new QPushButton(OptQuestBox);
+        ButtomChoiceQuest->setObjectName(QString::fromUtf8("ButtomChoiceQuest"));
+        ButtomChoiceQuest->setGeometry(QRect(513, 23, 101, 16));
+
+        verticalLayout->addWidget(OptQuestBox);
+
         MainBox = new QGroupBox(quest);
         MainBox->setObjectName(QString::fromUtf8("MainBox"));
-        MainBox->setMinimumSize(QSize(624, 367));
-        MainBox->setMaximumSize(QSize(624, 3670));
-        textEdit = new QTextEdit(MainBox);
-        textEdit->setObjectName(QString::fromUtf8("textEdit"));
-        textEdit->setGeometry(QRect(10, 20, 601, 381));
-        textEdit->setMaximumSize(QSize(601, 381));
-        OptBox->raise();
-        OptDopBox->raise();
-        OptDopBox->raise();
-        OptDopBox->raise();
-        textEdit->raise();
+        MainBox->setMinimumSize(QSize(624, 361));
+        MainBox->setMaximumSize(QSize(624, 361));
+        verticalLayout_5 = new QVBoxLayout(MainBox);
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setContentsMargins(-1, -1, 0, -1);
+        txtPosNpc = new QLabel(MainBox);
+        txtPosNpc->setObjectName(QString::fromUtf8("txtPosNpc"));
+        txtPosNpc->setMinimumSize(QSize(0, 16));
+        txtPosNpc->setMaximumSize(QSize(16777215, 16));
+
+        horizontalLayout_3->addWidget(txtPosNpc);
+
+        ButtonShowNpcMap = new QPushButton(MainBox);
+        ButtonShowNpcMap->setObjectName(QString::fromUtf8("ButtonShowNpcMap"));
+        ButtonShowNpcMap->setMinimumSize(QSize(0, 16));
+        ButtonShowNpcMap->setMaximumSize(QSize(16777214, 16));
+
+        horizontalLayout_3->addWidget(ButtonShowNpcMap);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 16, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_2);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_3);
+
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        TxtDaly = new QLabel(MainBox);
+        TxtDaly->setObjectName(QString::fromUtf8("TxtDaly"));
+
+        horizontalLayout_4->addWidget(TxtDaly);
+
+        lineDaly = new QLineEdit(MainBox);
+        lineDaly->setObjectName(QString::fromUtf8("lineDaly"));
+        lineDaly->setEnabled(false);
+        QPalette palette;
+        QBrush brush(QColor(0, 0, 0, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Active, QPalette::Text, brush);
+        QBrush brush1(QColor(255, 255, 255, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Text, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        lineDaly->setPalette(palette);
+
+        horizontalLayout_4->addWidget(lineDaly);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_4);
+
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        txtInfo = new QLabel(MainBox);
+        txtInfo->setObjectName(QString::fromUtf8("txtInfo"));
+        QPalette palette1;
+        palette1.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        palette1.setBrush(QPalette::Active, QPalette::Midlight, brush1);
+        palette1.setBrush(QPalette::Active, QPalette::Text, brush);
+        palette1.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette1.setBrush(QPalette::Active, QPalette::Base, brush1);
+        palette1.setBrush(QPalette::Active, QPalette::Window, brush1);
+        palette1.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::Midlight, brush1);
+        palette1.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::Base, brush1);
+        QBrush brush2(QColor(240, 240, 240, 255));
+        brush2.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Inactive, QPalette::Window, brush2);
+        palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush);
+        palette1.setBrush(QPalette::Disabled, QPalette::Midlight, brush1);
+        palette1.setBrush(QPalette::Disabled, QPalette::Text, brush);
+        palette1.setBrush(QPalette::Disabled, QPalette::ButtonText, brush);
+        palette1.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette1.setBrush(QPalette::Disabled, QPalette::Window, brush2);
+        txtInfo->setPalette(palette1);
+
+        verticalLayout_3->addWidget(txtInfo);
+
+        lineInfo = new QTextBrowser(MainBox);
+        lineInfo->setObjectName(QString::fromUtf8("lineInfo"));
+        lineInfo->setEnabled(false);
+        QPalette palette2;
+        palette2.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        palette2.setBrush(QPalette::Active, QPalette::Text, brush);
+        palette2.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette2.setBrush(QPalette::Active, QPalette::Base, brush1);
+        palette2.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::Base, brush1);
+        palette2.setBrush(QPalette::Disabled, QPalette::WindowText, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::Text, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::ButtonText, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        lineInfo->setPalette(palette2);
+
+        verticalLayout_3->addWidget(lineInfo);
+
+
+        verticalLayout_5->addLayout(verticalLayout_3);
+
+        verticalLayout_4 = new QVBoxLayout();
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        txtAward = new QLabel(MainBox);
+        txtAward->setObjectName(QString::fromUtf8("txtAward"));
+        txtAward->setEnabled(true);
+
+        verticalLayout_4->addWidget(txtAward);
+
+        textAward = new QTextBrowser(MainBox);
+        textAward->setObjectName(QString::fromUtf8("textAward"));
+        textAward->setEnabled(false);
+        QPalette palette3;
+        palette3.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        palette3.setBrush(QPalette::Active, QPalette::Text, brush);
+        palette3.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette3.setBrush(QPalette::Active, QPalette::Base, brush1);
+        palette3.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette3.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette3.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
+        palette3.setBrush(QPalette::Inactive, QPalette::Base, brush1);
+        palette3.setBrush(QPalette::Disabled, QPalette::WindowText, brush);
+        palette3.setBrush(QPalette::Disabled, QPalette::Text, brush);
+        palette3.setBrush(QPalette::Disabled, QPalette::ButtonText, brush);
+        palette3.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        textAward->setPalette(palette3);
+
+        verticalLayout_4->addWidget(textAward);
+
+        txtItem = new QLabel(MainBox);
+        txtItem->setObjectName(QString::fromUtf8("txtItem"));
+
+        verticalLayout_4->addWidget(txtItem);
+
+        textItem = new QTextBrowser(MainBox);
+        textItem->setObjectName(QString::fromUtf8("textItem"));
+        textItem->setEnabled(false);
+        QPalette palette4;
+        palette4.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        palette4.setBrush(QPalette::Active, QPalette::Text, brush);
+        palette4.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette4.setBrush(QPalette::Active, QPalette::Base, brush1);
+        palette4.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette4.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette4.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
+        palette4.setBrush(QPalette::Inactive, QPalette::Base, brush1);
+        palette4.setBrush(QPalette::Disabled, QPalette::WindowText, brush);
+        palette4.setBrush(QPalette::Disabled, QPalette::Text, brush);
+        palette4.setBrush(QPalette::Disabled, QPalette::ButtonText, brush);
+        palette4.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        textItem->setPalette(palette4);
+
+        verticalLayout_4->addWidget(textItem);
+
+        txtRep = new QLabel(MainBox);
+        txtRep->setObjectName(QString::fromUtf8("txtRep"));
+
+        verticalLayout_4->addWidget(txtRep);
+
+        textRep = new QTextBrowser(MainBox);
+        textRep->setObjectName(QString::fromUtf8("textRep"));
+        textRep->setEnabled(false);
+        QPalette palette5;
+        palette5.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        palette5.setBrush(QPalette::Active, QPalette::Text, brush);
+        palette5.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette5.setBrush(QPalette::Active, QPalette::Base, brush1);
+        palette5.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette5.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette5.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
+        palette5.setBrush(QPalette::Inactive, QPalette::Base, brush1);
+        palette5.setBrush(QPalette::Disabled, QPalette::WindowText, brush);
+        palette5.setBrush(QPalette::Disabled, QPalette::Text, brush);
+        palette5.setBrush(QPalette::Disabled, QPalette::ButtonText, brush);
+        palette5.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        textRep->setPalette(palette5);
+
+        verticalLayout_4->addWidget(textRep);
+
+
+        verticalLayout_5->addLayout(verticalLayout_4);
+
+        horizontalLayout_8 = new QHBoxLayout();
+        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
+        ButtonGoalToMaps = new QPushButton(MainBox);
+        ButtonGoalToMaps->setObjectName(QString::fromUtf8("ButtonGoalToMaps"));
+
+        horizontalLayout_8->addWidget(ButtonGoalToMaps);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_8->addItem(horizontalSpacer);
+
+        ButtonClose = new QPushButton(MainBox);
+        ButtonClose->setObjectName(QString::fromUtf8("ButtonClose"));
+
+        horizontalLayout_8->addWidget(ButtonClose);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_8);
+
 
         verticalLayout->addWidget(MainBox);
 
@@ -143,7 +390,19 @@ public:
         OptDopBox->setTitle(QApplication::translate("quest", "\320\224\320\276\320\277. \320\276\320\277\321\206\320\270\320\270", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("quest", "\320\222\321\213\320\261\320\265\321\200\320\270\321\202\320\265 NPC", 0, QApplication::UnicodeUTF8));
         ButtomChoiceName->setText(QApplication::translate("quest", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214", 0, QApplication::UnicodeUTF8));
-        MainBox->setTitle(QApplication::translate("quest", "\320\230\320\275\321\204\320\276\321\200\320\274\320\260\321\206\320\270\321\217 \320\277\320\276 \320\272\320\262\320\265\321\201\321\202\320\260\320\274", 0, QApplication::UnicodeUTF8));
+        OptQuestBox->setTitle(QApplication::translate("quest", "\320\222\321\213\320\261\320\276\321\200 \320\267\320\260\320\264\320\260\320\275\320\270\321\217", 0, QApplication::UnicodeUTF8));
+        txtQuest->setText(QApplication::translate("quest", "\320\222\321\213\320\261\320\265\321\200\320\270\321\202\320\265 \320\267\320\260\320\264\320\260\320\275\320\270\320\265", 0, QApplication::UnicodeUTF8));
+        ButtomChoiceQuest->setText(QApplication::translate("quest", "\320\222\321\213\320\261\321\200\320\260\321\202\321\214", 0, QApplication::UnicodeUTF8));
+        MainBox->setTitle(QString());
+        txtPosNpc->setText(QApplication::translate("quest", "\320\237\320\276\320\267\320\270\321\206\320\270\321\217 NPC:", 0, QApplication::UnicodeUTF8));
+        ButtonShowNpcMap->setText(QApplication::translate("quest", "\320\237\320\276\321\201\320\274\320\276\321\202\321\200\320\265\321\202\321\214 \320\275\320\260 \320\272\320\260\321\200\321\202\320\265", 0, QApplication::UnicodeUTF8));
+        TxtDaly->setText(QApplication::translate("quest", "\320\225\320\266\320\265\320\264\320\275\320\265\320\262\320\275\321\213\320\271?:", 0, QApplication::UnicodeUTF8));
+        txtInfo->setText(QApplication::translate("quest", "\320\230\320\275\321\204\320\276\321\200\320\274\320\260\321\206\320\270\321\217:", 0, QApplication::UnicodeUTF8));
+        txtAward->setText(QApplication::translate("quest", "\320\235\320\260\320\263\321\200\320\260\320\264\320\260 - \320\276\320\277\321\213\321\202:", 0, QApplication::UnicodeUTF8));
+        txtItem->setText(QApplication::translate("quest", "\320\235\320\260\320\263\321\200\320\260\320\264\320\260 - \320\262\320\265\321\211\321\214:", 0, QApplication::UnicodeUTF8));
+        txtRep->setText(QApplication::translate("quest", "\320\235\320\260\320\263\321\200\320\260\320\264\320\260 - \321\200\320\265\320\277\321\203\321\202\320\260\321\206\320\270\321\217:", 0, QApplication::UnicodeUTF8));
+        ButtonGoalToMaps->setText(QApplication::translate("quest", "\320\237\320\276\321\201\320\274\320\276\321\202\321\200\320\265\321\202\321\214 \321\206\320\265\320\273\321\214 \320\272\320\262\320\265\321\201\321\202\320\260 \320\275\320\260 \320\272\320\260\321\200\321\202\320\265", 0, QApplication::UnicodeUTF8));
+        ButtonClose->setText(QApplication::translate("quest", "\320\227\320\260\320\272\321\200\321\213\321\202\321\214", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

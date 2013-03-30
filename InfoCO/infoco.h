@@ -17,10 +17,16 @@ public:
 	~InfoCO();
 
 private slots:
-	void ChoiceDialog();
+	void ButtonListClick();
+	void ButtonCalcClick();
+	void ButtonMapsClick();
+	void ButtonQuestClic();
+	void ButtonBlocClick();
+	void ButtoninfoClick();
+	// скрытые кнопки
+	void ButtonEditQuestClick();
 
 private:
-	int TypeOpt;
 	Ui::InfoCOClass ui;
 };
 

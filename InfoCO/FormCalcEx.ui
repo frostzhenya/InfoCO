@@ -20,8 +20,8 @@
    <string>Калькулятор опыта</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="infoco.qrc">
-    <normaloff>img/InfoCO.png</normaloff>img/InfoCO.png</iconset>
+   <iconset>
+    <normaloff>img/sZOInfo.png</normaloff>img/sZOInfo.png</iconset>
   </property>
   <widget class="QGroupBox" name="CalcExGroupBox">
    <property name="geometry">

@@ -7,7 +7,7 @@
 
 #include <QtGui/QDialog>
 #include "ui_list.h"
-#include "xmlData.h"
+#include "SqlliteDB.h"
 #include <QtCore/qstring.h>
 
 class List : public QDialog
@@ -20,14 +20,10 @@ public:
 
 private slots:
 	void ShowListClic();
-	void OpenOptionList();
-	void CloseOptionList();
-	void addNameToList();
 	void OptChanged();
 
 private:
-	bool LoadXML;
-	xmlData* xml;
+	SqlliteDB DB;
 	int saveIndex;
 	QString saveOptStr;
 	Ui::List ui;

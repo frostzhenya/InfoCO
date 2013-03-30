@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'infoco.h'
 **
-** Created: Tue 5. Mar 15:40:10 2013
+** Created: Tue 26. Mar 18:27:59 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_InfoCO[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       7,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -32,12 +32,21 @@ static const uint qt_meta_data_InfoCO[] = {
 
  // slots: signature, parameters, type, tag, flags
        8,    7,    7,    7, 0x08,
+      26,    7,    7,    7, 0x08,
+      44,    7,    7,    7, 0x08,
+      62,    7,    7,    7, 0x08,
+      80,    7,    7,    7, 0x08,
+      98,    7,    7,    7, 0x08,
+     116,    7,    7,    7, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_InfoCO[] = {
-    "InfoCO\0\0ChoiceDialog()\0"
+    "InfoCO\0\0ButtonListClick()\0ButtonCalcClick()\0"
+    "ButtonMapsClick()\0ButtonQuestClic()\0"
+    "ButtonBlocClick()\0ButtoninfoClick()\0"
+    "ButtonEditQuestClick()\0"
 };
 
 void InfoCO::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -46,7 +55,13 @@ void InfoCO::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         Q_ASSERT(staticMetaObject.cast(_o));
         InfoCO *_t = static_cast<InfoCO *>(_o);
         switch (_id) {
-        case 0: _t->ChoiceDialog(); break;
+        case 0: _t->ButtonListClick(); break;
+        case 1: _t->ButtonCalcClick(); break;
+        case 2: _t->ButtonMapsClick(); break;
+        case 3: _t->ButtonQuestClic(); break;
+        case 4: _t->ButtonBlocClick(); break;
+        case 5: _t->ButtoninfoClick(); break;
+        case 6: _t->ButtonEditQuestClick(); break;
         default: ;
         }
     }
@@ -85,9 +100,9 @@ int InfoCO::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 7;
     }
     return _id;
 }
