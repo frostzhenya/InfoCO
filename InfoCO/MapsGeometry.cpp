@@ -3,7 +3,7 @@
 */
 #include "MapsGeometry.h"
 
-MapsGeometry::MapsGeometry(QWidget *parent, QLineEdit *X, QLineEdit *Y, int TypeMap): QDialog(parent)
+MapsGeometry::MapsGeometry(QWidget *parent, QLineEdit *X, QLineEdit *Y, int TypeMap): QDialog(parent, Qt::WindowStaysOnTopHint)
 {
 	ui.setupUi(this);
 	SceneGeometry* scene;

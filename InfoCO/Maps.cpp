@@ -3,12 +3,13 @@
 */
 
 #include "Maps.h"
+#include "infoco.h"
 #include <QtGui/qbitmap.h>
 #include <QtGui/QGraphicsitem>
 #include <QtGui/QGraphicsscene>
 #include <QtGui/QGraphicsview>
 
-Maps::Maps(QWidget *parent): QDialog(parent)
+Maps::Maps(QWidget *parent): QDialog(parent, Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint)
 {
 	ui.setupUi(this);
 
@@ -19,6 +20,7 @@ Maps::Maps(QWidget *parent): QDialog(parent)
 	connect(ui.ButtomView,SIGNAL(clicked()),this,SLOT(ClicShowMap()));
 	connect(ui.ButtomZoomIn,SIGNAL(clicked()),this,SLOT(ZoomInMap()));
 	connect(ui.ButtomZoomOut,SIGNAL(clicked()),this,SLOT(ZoomOutMap()));
+	connect(ui.ButtonBack,SIGNAL(clicked()),this,SLOT(ButtonBack()));
 }
 
 
@@ -78,4 +80,11 @@ void Maps::ZoomInMap()
 void Maps::ZoomOutMap()
 {
 	ui.ShowGraf->scale(1 / 1.1, 1 / 1.1);
+}
+
+void Maps::ButtonBack()
+{
+	InfoCO sZoneInfo;
+	close();
+	sZoneInfo.exec();
 }

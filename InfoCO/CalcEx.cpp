@@ -6,9 +6,9 @@
 #include <QtCore\QTextCodec>
 #include <cmath>
 #include <string>
+#include "infoco.h"
 
-CalcEx::CalcEx(QWidget *parent, Qt::WFlags flags)
-	: QDialog(parent, flags)
+CalcEx::CalcEx(QWidget *parent): QDialog(parent, Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint)
 {
 	ui.setupUi(this);
 
@@ -22,7 +22,7 @@ CalcEx::CalcEx(QWidget *parent, Qt::WFlags flags)
 	ui.EditCurrentNumLvl->setValidator(new QRegExpValidator(RegExp, this));
 	ui.EditDesiredNumLvl->setValidator(new QRegExpValidator(RegExp, this));
 
-	connect(ui.ButtomClose,SIGNAL(clicked()),this,SLOT(accept()));
+	connect(ui.ButtomClose,SIGNAL(clicked()),this,SLOT(ButtonBack()));
 	connect(ui.ButtomCalc,SIGNAL(clicked()),this,SLOT(CalcToExp()));
 }
 
@@ -50,6 +50,13 @@ void CalcEx::CalcToExp()
 CalcEx::~CalcEx()
 {
 
+}
+
+void CalcEx::ButtonBack()
+{
+	InfoCO sZoneInfo;
+	close();
+	sZoneInfo.exec();
 }
 
 int CalcEx::returnExp(int lvl)

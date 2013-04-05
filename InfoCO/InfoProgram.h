@@ -16,8 +16,8 @@ public:
 	InfoProg(QWidget *parent = 0);
 	~InfoProg();
 
-/*private slots:
-	void ButtonCloseClick();*/
+private slots:
+	void ButtonBackClick();
 
 private:
 	Ui::InfoProgramm ui;

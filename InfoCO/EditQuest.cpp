@@ -42,7 +42,7 @@ QString EditQuest::IntToQStr(int integer)
 	return buf;
 }
 
-EditQuest::EditQuest(QWidget *parent): QDialog(parent)
+EditQuest::EditQuest(QWidget *parent): QDialog(parent, Qt::WindowStaysOnTopHint)
 {
 	ui.setupUi(this);
 	DB.createConnection();
@@ -57,6 +57,9 @@ EditQuest::EditQuest(QWidget *parent): QDialog(parent)
 	connect(ui.ButtonDeleteQuest,SIGNAL(clicked()),this,SLOT(ButtonDeleteQuestClick()));
 
 	connect(ui.ButtonGeometr0, SIGNAL(clicked()),this,SLOT(ButtomButtonGeometr0Click()));
+	connect(ui.ButtonGeometr1, SIGNAL(clicked()),this,SLOT(ButtomButtonGeometr1Click()));
+	connect(ui.ButtonGeometr2, SIGNAL(clicked()),this,SLOT(ButtomButtonGeometr2Click()));
+	connect(ui.ButtonGeometr3, SIGNAL(clicked()),this,SLOT(ButtomButtonGeometr3Click()));
 }
 
 
@@ -248,6 +251,7 @@ void EditQuest::ButtonDeleteQuestClick()
 	
 	ui.textEditResultSQL->setText(resultSQL);
 	DB.query(resultSQL);
+	ButtonClearClick();
 }
 
 void EditQuest::ShowDataTable()

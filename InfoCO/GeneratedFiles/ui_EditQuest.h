@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'EditQuest.ui'
 **
-** Created: Sat 30. Mar 12:09:37 2013
+** Created: Sat 30. Mar 13:00:09 2013
 **      by: Qt User Interface Compiler version 4.8.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -60,21 +60,21 @@ public:
     QLineEdit *EditY1;
     QLabel *label_8;
     QLabel *label_9;
-    QPushButton *ButtonGeometr2;
+    QPushButton *ButtonGeometr1;
     QGroupBox *groupBoxGeometr2;
     QComboBox *comboBoxMap2;
     QLineEdit *EditX2;
     QLineEdit *EditY2;
     QLabel *label_10;
     QLabel *label_11;
-    QPushButton *ButtonGeometr3;
+    QPushButton *ButtonGeometr2;
     QGroupBox *groupBoxGeometr3;
     QComboBox *comboBoxMap3;
     QLineEdit *EditX3;
     QLineEdit *EditY3;
     QLabel *label_12;
     QLabel *label_13;
-    QPushButton *ButtonGeometr4;
+    QPushButton *ButtonGeometr3;
     QComboBox *comboBoxGoalQuest;
     QLabel *label_14;
     QWidget *verticalLayoutWidget;
@@ -217,9 +217,9 @@ public:
         label_9 = new QLabel(groupBoxGeometr1);
         label_9->setObjectName(QString::fromUtf8("label_9"));
         label_9->setGeometry(QRect(10, 80, 16, 16));
-        ButtonGeometr2 = new QPushButton(groupBoxGeometr1);
-        ButtonGeometr2->setObjectName(QString::fromUtf8("ButtonGeometr2"));
-        ButtonGeometr2->setGeometry(QRect(20, 110, 111, 23));
+        ButtonGeometr1 = new QPushButton(groupBoxGeometr1);
+        ButtonGeometr1->setObjectName(QString::fromUtf8("ButtonGeometr1"));
+        ButtonGeometr1->setGeometry(QRect(20, 110, 111, 23));
         groupBoxGeometr2 = new QGroupBox(groupBox);
         groupBoxGeometr2->setObjectName(QString::fromUtf8("groupBoxGeometr2"));
         groupBoxGeometr2->setGeometry(QRect(10, 320, 151, 141));
@@ -238,9 +238,9 @@ public:
         label_11 = new QLabel(groupBoxGeometr2);
         label_11->setObjectName(QString::fromUtf8("label_11"));
         label_11->setGeometry(QRect(10, 80, 16, 16));
-        ButtonGeometr3 = new QPushButton(groupBoxGeometr2);
-        ButtonGeometr3->setObjectName(QString::fromUtf8("ButtonGeometr3"));
-        ButtonGeometr3->setGeometry(QRect(30, 110, 111, 23));
+        ButtonGeometr2 = new QPushButton(groupBoxGeometr2);
+        ButtonGeometr2->setObjectName(QString::fromUtf8("ButtonGeometr2"));
+        ButtonGeometr2->setGeometry(QRect(30, 110, 111, 23));
         groupBoxGeometr3 = new QGroupBox(groupBox);
         groupBoxGeometr3->setObjectName(QString::fromUtf8("groupBoxGeometr3"));
         groupBoxGeometr3->setGeometry(QRect(170, 320, 151, 141));
@@ -259,9 +259,9 @@ public:
         label_13 = new QLabel(groupBoxGeometr3);
         label_13->setObjectName(QString::fromUtf8("label_13"));
         label_13->setGeometry(QRect(10, 80, 16, 16));
-        ButtonGeometr4 = new QPushButton(groupBoxGeometr3);
-        ButtonGeometr4->setObjectName(QString::fromUtf8("ButtonGeometr4"));
-        ButtonGeometr4->setGeometry(QRect(30, 110, 111, 23));
+        ButtonGeometr3 = new QPushButton(groupBoxGeometr3);
+        ButtonGeometr3->setObjectName(QString::fromUtf8("ButtonGeometr3"));
+        ButtonGeometr3->setGeometry(QRect(30, 110, 111, 23));
         comboBoxGoalQuest = new QComboBox(groupBox);
         comboBoxGoalQuest->setObjectName(QString::fromUtf8("comboBoxGoalQuest"));
         comboBoxGoalQuest->setGeometry(QRect(360, 140, 91, 20));
@@ -488,7 +488,7 @@ public:
         EditY1->setText(QApplication::translate("EditDataBase", "0", 0, QApplication::UnicodeUTF8));
         label_8->setText(QApplication::translate("EditDataBase", "x", 0, QApplication::UnicodeUTF8));
         label_9->setText(QApplication::translate("EditDataBase", "y", 0, QApplication::UnicodeUTF8));
-        ButtonGeometr2->setText(QApplication::translate("EditDataBase", "\320\243\320\272\320\260\320\267\320\260\321\202\321\214 \320\277\320\276 \320\272\320\260\321\200\321\202\320\265", 0, QApplication::UnicodeUTF8));
+        ButtonGeometr1->setText(QApplication::translate("EditDataBase", "\320\243\320\272\320\260\320\267\320\260\321\202\321\214 \320\277\320\276 \320\272\320\260\321\200\321\202\320\265", 0, QApplication::UnicodeUTF8));
         groupBoxGeometr2->setTitle(QApplication::translate("EditDataBase", "\320\232\320\276\320\276\321\200\320\264\320\270\320\275\320\260\321\202\321\213 \321\206\320\265\320\273\320\270 \320\272\320\262 \342\204\226 3", 0, QApplication::UnicodeUTF8));
         comboBoxMap2->clear();
         comboBoxMap2->insertItems(0, QStringList()
@@ -503,7 +503,7 @@ public:
         EditY2->setText(QApplication::translate("EditDataBase", "0", 0, QApplication::UnicodeUTF8));
         label_10->setText(QApplication::translate("EditDataBase", "x", 0, QApplication::UnicodeUTF8));
         label_11->setText(QApplication::translate("EditDataBase", "y", 0, QApplication::UnicodeUTF8));
-        ButtonGeometr3->setText(QApplication::translate("EditDataBase", "\320\243\320\272\320\260\320\267\320\260\321\202\321\214 \320\277\320\276 \320\272\320\260\321\200\321\202\320\265", 0, QApplication::UnicodeUTF8));
+        ButtonGeometr2->setText(QApplication::translate("EditDataBase", "\320\243\320\272\320\260\320\267\320\260\321\202\321\214 \320\277\320\276 \320\272\320\260\321\200\321\202\320\265", 0, QApplication::UnicodeUTF8));
         groupBoxGeometr3->setTitle(QApplication::translate("EditDataBase", "\320\232\320\276\320\276\321\200\320\264\320\270\320\275\320\260\321\202\321\213 \321\206\320\265\320\273\320\270 \320\272\320\262 \342\204\226 4", 0, QApplication::UnicodeUTF8));
         comboBoxMap3->clear();
         comboBoxMap3->insertItems(0, QStringList()
@@ -518,7 +518,7 @@ public:
         EditY3->setText(QApplication::translate("EditDataBase", "0", 0, QApplication::UnicodeUTF8));
         label_12->setText(QApplication::translate("EditDataBase", "x", 0, QApplication::UnicodeUTF8));
         label_13->setText(QApplication::translate("EditDataBase", "y", 0, QApplication::UnicodeUTF8));
-        ButtonGeometr4->setText(QApplication::translate("EditDataBase", "\320\243\320\272\320\260\320\267\320\260\321\202\321\214 \320\277\320\276 \320\272\320\260\321\200\321\202\320\265", 0, QApplication::UnicodeUTF8));
+        ButtonGeometr3->setText(QApplication::translate("EditDataBase", "\320\243\320\272\320\260\320\267\320\260\321\202\321\214 \320\277\320\276 \320\272\320\260\321\200\321\202\320\265", 0, QApplication::UnicodeUTF8));
         comboBoxGoalQuest->clear();
         comboBoxGoalQuest->insertItems(0, QStringList()
          << QApplication::translate("EditDataBase", "\320\275\320\265\321\202", 0, QApplication::UnicodeUTF8)

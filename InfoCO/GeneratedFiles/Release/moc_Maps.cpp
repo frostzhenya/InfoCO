@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'Maps.h'
 **
-** Created: Sun 10. Mar 21:09:58 2013
+** Created: Wed 3. Apr 19:18:17 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_Maps[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -34,13 +34,14 @@ static const uint qt_meta_data_Maps[] = {
        6,    5,    5,    5, 0x08,
       20,    5,    5,    5, 0x08,
       32,    5,    5,    5, 0x08,
+      45,    5,    5,    5, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_Maps[] = {
     "Maps\0\0ClicShowMap()\0ZoomInMap()\0"
-    "ZoomOutMap()\0"
+    "ZoomOutMap()\0ButtonBack()\0"
 };
 
 void Maps::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -52,6 +53,7 @@ void Maps::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         case 0: _t->ClicShowMap(); break;
         case 1: _t->ZoomInMap(); break;
         case 2: _t->ZoomOutMap(); break;
+        case 3: _t->ButtonBack(); break;
         default: ;
         }
     }
@@ -90,9 +92,9 @@ int Maps::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }

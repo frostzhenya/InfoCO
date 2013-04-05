@@ -443,7 +443,7 @@ p, li { white-space: pre-wrap; }
       <string>y</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="ButtonGeometr2">
+    <widget class="QPushButton" name="ButtonGeometr1">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -561,7 +561,7 @@ p, li { white-space: pre-wrap; }
       <string>y</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="ButtonGeometr3">
+    <widget class="QPushButton" name="ButtonGeometr2">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -679,7 +679,7 @@ p, li { white-space: pre-wrap; }
       <string>y</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="ButtonGeometr4">
+    <widget class="QPushButton" name="ButtonGeometr3">
      <property name="geometry">
       <rect>
        <x>30</x>

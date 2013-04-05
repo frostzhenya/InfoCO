@@ -15,7 +15,10 @@
 #include <QtSql>
 #include "SqlliteDB.h"
 
-InfoCO::InfoCO(QWidget *parent): QDialog(parent)
+// для теста
+#include "QuestMap.h"
+
+InfoCO::InfoCO(QWidget *parent): QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowMinimizeButtonHint | Qt::WindowStaysOnTopHint)
 {
 	ui.setupUi(this);
 
@@ -32,42 +35,80 @@ InfoCO::InfoCO(QWidget *parent): QDialog(parent)
 	connect(ui.ButtonInfo,SIGNAL(clicked()),this,SLOT(ButtoninfoClick()));
 	//скрытые
 	connect(ui.ButtonEditQuest,SIGNAL(clicked()),this,SLOT(ButtonEditQuestClick()));
-}
 
-void InfoCO::ButtonListClick()
-{
-	List listForm;
-	listForm.exec();
+	// настройки trayIcon
+	restoreAction = new QAction(QString("Возобновить"), this);
+	quitAction = new QAction(QString("Выход"), this);
+
+	QFont fontRA;
+	fontRA.setFamily(QString("Segoe Print"));
+	restoreAction->setFont(fontRA);
+
+	QFont fontQA;
+	fontQA.setFamily(QString("Segoe Print"));
+	quitAction->setFont(fontRA);
+
+	connect(restoreAction, SIGNAL(triggered()), this, SLOT(showNormal()));
+    connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
+
+	trayIconMenu = new QMenu(this);
+    trayIconMenu->addAction(restoreAction);
+    trayIconMenu->addSeparator();
+    trayIconMenu->addAction(quitAction);
+
+    trayIcon = new QSystemTrayIcon(this);
+    trayIcon->setContextMenu(trayIconMenu);
+	trayIcon->setIcon(QIcon("img/sZOInfo.png"));
+	// Временно, пока нет опций
+	setVisible(true);
+
+	connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),this, SLOT(RenewDoubleClick(QSystemTrayIcon::ActivationReason)));
+
+	trayIcon->show();
 }
 
 void InfoCO::ButtonCalcClick()
 {
 	CalcEx CalcForm;
+	close();
 	CalcForm.exec();
+}
+
+void InfoCO::ButtonListClick()
+{
+	List listForm;
+	close();
+	listForm.exec();
 }
 
 void InfoCO::ButtonMapsClick()
 {
 	Maps mapsForm;
+	close();
 	mapsForm.exec();
 }
 
 void InfoCO::ButtonQuestClic()
 {
-	quest questForm;
+	/*quest questForm;
 	questForm.setGeometry(300,300,20,20);
-	questForm.exec();
+	questForm.exec();*/
+	QuestMap QuestMapForm;
+	close();
+	QuestMapForm.exec();
 }
 
 void InfoCO::ButtonBlocClick()
 {
 	miniNotebook miniNotebookForm;
+	close();
 	miniNotebookForm.exec();
 }
 
 void InfoCO::ButtoninfoClick()
 {
 	InfoProg progForm;
+	close();
 	progForm.exec();
 }
 
@@ -81,4 +122,32 @@ void InfoCO::ButtonEditQuestClick()
 {
 	EditQuest EditQuestForm;
 	EditQuestForm.exec();
+}
+
+// tray
+void InfoCO::changeEvent(QEvent* event)
+{
+	if(event->type() == QEvent::WindowStateChange && isMinimized())
+	{
+		QTimer::singleShot(0, this, SLOT(hide()));
+		event->ignore();
+	}
+}
+
+void InfoCO::RenewDoubleClick(QSystemTrayIcon::ActivationReason reason)
+{
+	if(reason == 2)
+	{
+		showNormal();
+	}
+
+	switch (reason)
+	{
+    case QSystemTrayIcon::Trigger:
+    case QSystemTrayIcon::DoubleClick:
+		//showNormal();
+        break;
+    case QSystemTrayIcon::MiddleClick:
+        break;
+	}
 }

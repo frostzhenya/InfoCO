@@ -15,12 +15,13 @@ class List : public QDialog
 	Q_OBJECT
 
 public:
-	List(QWidget *parent = 0, Qt::WFlags flags = 0);
+	List(QWidget *parent = 0);
 	~List();
 
 private slots:
 	void ShowListClic();
 	void OptChanged();
+	void ButtonBack();
 
 private:
 	SqlliteDB DB;

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'miniNotebook.h'
 **
-** Created: Fri 15. Mar 16:45:23 2013
+** Created: Wed 3. Apr 18:46:37 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_miniNotebook[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -32,12 +32,14 @@ static const uint qt_meta_data_miniNotebook[] = {
 
  // slots: signature, parameters, type, tag, flags
       14,   13,   13,   13, 0x08,
+      32,   13,   13,   13, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_miniNotebook[] = {
     "miniNotebook\0\0ButtomSaveClick()\0"
+    "ButtonBack()\0"
 };
 
 void miniNotebook::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -47,6 +49,7 @@ void miniNotebook::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         miniNotebook *_t = static_cast<miniNotebook *>(_o);
         switch (_id) {
         case 0: _t->ButtomSaveClick(); break;
+        case 1: _t->ButtonBack(); break;
         default: ;
         }
     }
@@ -85,9 +88,9 @@ int miniNotebook::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }

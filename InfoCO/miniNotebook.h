@@ -21,6 +21,7 @@ public:
 
 private slots:
 	void ButtomSaveClick();
+	void ButtonBack();
 
 private:
 	std::fstream file;

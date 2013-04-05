@@ -34,6 +34,9 @@
     <Filter Include="more">
       <UniqueIdentifier>{888042e8-77a7-47d2-ab02-a3ff8fd40050}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Quest">
+      <UniqueIdentifier>{927b67dd-282e-422e-affb-8a19ce422bc5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeneratedFiles\Debug\moc_infoco.cpp">
@@ -130,6 +133,24 @@
     <ClCompile Include="SceneGeometry.cpp">
       <Filter>more</Filter>
     </ClCompile>
+    <ClCompile Include="QuestMap.cpp">
+      <Filter>Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QuestMap.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QuestMap.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestInfo.cpp">
+      <Filter>Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QuestInfo.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QuestInfo.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="infoco.ui">
@@ -184,6 +205,18 @@
     <CustomBuild Include="MapsGeometry.h">
       <Filter>more</Filter>
     </CustomBuild>
+    <CustomBuild Include="QuestMap.ui">
+      <Filter>Quest</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QuestMap.h">
+      <Filter>Quest</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QuestInfo.ui">
+      <Filter>Quest</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QuestInfo.h">
+      <Filter>Quest</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_infoco.h">
@@ -221,6 +254,15 @@
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_MapsGeometry.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QuestMap.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QuestInfo.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sleeper.h">
+      <Filter>more</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

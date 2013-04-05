@@ -1,13 +1,16 @@
 <RCC>
     <qresource prefix="/">
         <file>img/infoco.png</file>
-        <file>img/texture/main.png</file>
-        <file>img/texture/buttom.png</file>
         <file>img/texture/texture.png</file>
-        <file>img/texture/buttom_small.png</file>
-        <file>img/texture/main_small.png</file>
-        <file>img/texture/buttom_main.png</file>
-        <file>img/texture/buttom_info.png</file>
         <file>img/sZOInfo.png</file>
+        <file>img/texture/defaultBtnLarge.tga</file>
+        <file>img/texture/main_bg.png</file>
+        <file>img/texture/win.tga</file>
+        <file>img/texture/main_calc.png</file>
+        <file>img/texture/main_list.png</file>
+        <file>img/texture/main_maps.png</file>
+        <file>img/texture/main_info.png</file>
+        <file>img/texture/ButtonLeft.png</file>
+        <file>img/texture/ButtonRight.png</file>
     </qresource>
 </RCC>

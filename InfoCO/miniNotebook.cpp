@@ -3,15 +3,16 @@
 */
 
 #include "miniNotebook.h"
+#include "infoco.h"
 #include <QtCore/qtextstream.h>
 #include <QtGui/qtextdocument.h>
 #include <QTextBlock>
 
-miniNotebook::miniNotebook(QWidget *parent): QDialog(parent)
+miniNotebook::miniNotebook(QWidget *parent): QDialog(parent, Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint)
 {
 	ui.setupUi(this);
 
-	connect(ui.ButtonClose,SIGNAL(clicked()),this,SLOT(accept()));
+	connect(ui.ButtonClose,SIGNAL(clicked()),this,SLOT(ButtonBack()));
 	connect(ui.ButtonSave,SIGNAL(clicked()),this,SLOT(ButtomSaveClick()));
 
 	char buf[1024];
@@ -43,4 +44,11 @@ void miniNotebook::ButtomSaveClick()
 		file << ui.textEdit->document()->findBlockByLineNumber(i).text().toStdString();
 		file<<"\n";
 	}
+}
+
+void miniNotebook::ButtonBack()
+{
+	InfoCO sZoneInfo;
+	close();
+	sZoneInfo.exec();
 }

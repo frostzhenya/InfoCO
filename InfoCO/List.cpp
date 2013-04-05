@@ -5,8 +5,9 @@
 
 #include <QtCore/qtextcodec.h>
 #include "List.h"
+#include "infoco.h"
 
-List::List(QWidget *parent, Qt::WFlags flags): QDialog(parent, flags)
+List::List(QWidget *parent): QDialog(parent, Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint)
 {
 	ui.setupUi(this);
 
@@ -21,7 +22,7 @@ List::List(QWidget *parent, Qt::WFlags flags): QDialog(parent, flags)
 	ui.groupBoxTypeStalkers->setEnabled(false);
 
 	connect(ui.ButtomAcceptList,SIGNAL(clicked()),this,SLOT(ShowListClic()));
-	connect(ui.ButtomClose,SIGNAL(clicked()),this,SLOT(accept()));
+	connect(ui.ButtomClose,SIGNAL(clicked()),this,SLOT(ButtonBack()));
 	connect(ui.OptList,SIGNAL(currentIndexChanged(int)),this,SLOT(OptChanged()));
 
 	DB.createConnection();
@@ -108,8 +109,6 @@ void List::ShowListClic()
 		else if(ui.radioBN->isChecked())
 			DB.SeachQListWidget(ui.ListView,"SELECT * FROM listClan WHERE type = '4';", ui.LaineNameSeach->text());
 	}
-	else
-		ui.groupBox->setEnabled(false);
 }
 
 void List::OptChanged()
@@ -139,4 +138,11 @@ void List::OptChanged()
 		ui.groupBoxTypeStalkers->setEnabled(false);
 		break;
 	}
+}
+
+void List::ButtonBack()
+{
+	InfoCO sZoneInfo;
+	close();
+	sZoneInfo.exec();
 }

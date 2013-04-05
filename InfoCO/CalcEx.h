@@ -14,11 +14,12 @@ class CalcEx : public QDialog
 	Q_OBJECT
 
 public:
-	CalcEx(QWidget *parent = 0, Qt::WFlags flags = 0);
+	CalcEx(QWidget *parent = 0);
 	~CalcEx();
 
 private slots:
 	void CalcToExp();
+	void ButtonBack();
 
 private:
 	int returnExp(int lvl);

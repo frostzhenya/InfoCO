@@ -22,6 +22,7 @@ private slots:
 	void ClicShowMap();
 	void ZoomInMap();
 	void ZoomOutMap();
+	void ButtonBack();
 
 private:
 	bool remove;

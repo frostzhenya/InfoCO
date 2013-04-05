@@ -5,7 +5,7 @@
 #ifndef INFOCO_H
 #define INFOCO_H
 
-#include <QtGui/QDialog>
+#include <QtGui>
 #include "ui_infoco.h"
 
 class InfoCO : public QDialog
@@ -25,9 +25,18 @@ private slots:
 	void ButtoninfoClick();
 	// скрытые кнопки
 	void ButtonEditQuestClick();
+	//tray
+	void RenewDoubleClick(QSystemTrayIcon::ActivationReason reason);
+
+protected:
+	void InfoCO::changeEvent(QEvent* event);
 
 private:
 	Ui::InfoCOClass ui;
+	QSystemTrayIcon* trayIcon;
+	QMenu* trayIconMenu;
+	QAction* restoreAction;
+	QAction* quitAction;
 };
 
 #endif // INFOCO_H

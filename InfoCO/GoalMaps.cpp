@@ -12,7 +12,7 @@
 #include <Windows.h>
 
 					// координаты х,у, карта, тип рисованой позиции (0-NPC, 1-цель кв)
-GoalMaps::GoalMaps(QWidget *parent,  int x, int y, int m, int typePos, int countGoal): QDialog(parent)
+GoalMaps::GoalMaps(QWidget *parent,  int x, int y, int m, int typePos, int countGoal): QDialog(parent, Qt::WindowStaysOnTopHint)
 {
 	ui.setupUi(this);
 
